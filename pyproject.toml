@@ -1,0 +1,22 @@
+[project]
+name = "openai-agent-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "rukhsanagull", email = "160248041+misbahkhan99@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "nest-asyncio>=1.6.0",
+    "openai-agents>=0.0.7",
+    "streamlit>=1.44.0",
+]
+
+[project.scripts]
+openai-agent-project = "openai_agent_project:main"
+kickoff = "openai_agent_project.main:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
